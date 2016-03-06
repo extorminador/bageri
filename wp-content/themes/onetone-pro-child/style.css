@@ -1,0 +1,145 @@
+/*
+Theme Name: Onetone Pro Child
+Template: onetone-pro
+Author: Child Theme Configurator
+Version: 1.0.1457202592
+Updated: 2016-03-05 19:29:52
+*/
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* Titillium */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700);
+/* Lora */
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased; }
+
+body {
+  font-family: "Titillium Web", sans-serif; }
+
+h1, h2, h3, h4, h4, h6,
+ul, ol, dl,
+p, blockquote {
+  font-family: "Titillium Web", sans-serif; }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.home-header {
+  background-color: #e8e5dc;
+  position: fixed;
+  width: 100%;
+  margin: 0 auto !important; }
+
+.history > .container > h1 > .section-title {
+  text-align: left; }
+
+.history
+> .container
+> .onetone-shortcode {
+  text-align: left; }
+  .history
+  > .container
+  > .onetone-shortcode h3 {
+    color: #bf674c;
+    font-size: 2rem; }
+
+.re-sellers > .container {
+  max-width: 68.5em; }
+
+.re-sellers > .container > .row {
+  margin: 0 auto; }
+
+.style1 > h3 {
+  margin-top: 0.5rem;
+  color: #93897d;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: none; }
+
+.port-img-re-sellers {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: 1px solid #93897d;
+  transition: all 0.3s; }
+
+.port-img-re-sellers:hover {
+  border: 10px solid #93897d; }
+
+.port-img-confectionery {
+  width: 100%;
+  height: auto;
+  border: 1px solid #93897d;
+  transition: all 0.3s; }
+
+.confectionery
+> .container
+> .onetone-shortcode h3 {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  color: red; }
+
+.cake {
+  color: salmon !important; }
+
+/* Grid HTML Classes */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100%;
+  *zoom: 1; }
+
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.row.collapse .column,
+.row.collapse .columns {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  float: left; }
+
+.row .row {
+  width: auto;
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none;
+  *zoom: 1; }
+
+.row .row:before, .row .row:after {
+  content: " ";
+  display: table; }
+
+.row .row:after {
+  clear: both; }
+
+.row .row.collapse {
+  width: auto;
+  margin: 0;
+  max-width: none;
+  *zoom: 1; }
+
+.row .row.collapse:before, .row .row.collapse:after {
+  content: " ";
+  display: table; }
+
+.row .row.collapse:after {
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */

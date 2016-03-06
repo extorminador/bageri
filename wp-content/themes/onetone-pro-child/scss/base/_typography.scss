@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/* Titillium */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700);
+
+/* Lora */
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+
+}
+
+body {
+  font-family: $basefont;
+}
+
+h1,h2,h3,h4,h4,h6,
+ul, ol, dl,
+p, blockquote {
+	font-family: $basefont;
+}
+
+
+
