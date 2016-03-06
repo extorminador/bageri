@@ -17,7 +17,7 @@
 <div class="<?php echo $wrap_class;?>">
 	<header class="home-header">
 		<div class="home-logo onetone-logo ">
-        	<a href="<?php echo esc_url(home_url('/')); ?>">
+        	<a class="home-logo--logotype" href="<?php echo esc_url(home_url('/')); ?>">
         <?php if ( onetone_options_array('logo')!="") { ?>
         <img src="<?php echo onetone_options_array('logo'); ?>" alt="<?php bloginfo('name'); ?>" />
         <?php }else{ ?>
@@ -30,29 +30,29 @@
         <div class="site-description "><?php bloginfo('description'); ?></div>
         <?php }?>
         </div>
-        
+
         <a class="home-navbar navbar" href="javascript:;"></a>
         <nav class="home-navigation top-nav">
 <?php
 
  $onepage_menu = '';
- $section_num = onetone_options_array( 'section_num' ); 
+ $section_num = onetone_options_array( 'section_num' );
  if(isset($section_num) && is_numeric($section_num ) && $section_num >0):
  for( $i = 0; $i < $section_num ;$i++){
 
  $section_menu = onetone_options_array( 'menu_title_'.$i );
 
  $section_slug   = onetone_options_array( 'menu_slug_'.$i );
- 
+
   if( $section_slug )
   $section_slug =  sanitize_title($section_slug );
-  
+
  $sanitize_title = $section_slug;
  if(isset($section_menu) && $section_menu !=""){
  if( !$sanitize_title ){
  $sanitize_title = sanitize_title($section_menu);
  }
- 
+
  $onepage_menu .= '<li  class="onetone-menuitem"><a class="onetone-menu-link" id="onetone-menu-'.$sanitize_title.'" href="#'.$sanitize_title.'" >
  <span>'.$section_menu.'</span></a></li>';
  }
@@ -67,5 +67,5 @@ echo '<ul>'.$onepage_menu.'</ul>';
 ?>
         </nav>
 		<div class="clear"></div>
-	</header>    
+	</header>
 	<!--header-->

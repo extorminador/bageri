@@ -21,6 +21,8 @@ Updated: 2016-03-05 19:29:52
 @import 'layout/header';
 @import 'layout/history';
 @import 'layout/re-sellers';
+@import 'layout/confectionery';
+@import 'layout/buttons';
 
 
 /* Grid HTML Classes */
@@ -30,7 +32,7 @@ Updated: 2016-03-05 19:29:52
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 100%;
+  max-width: 62.5em;
   *zoom: 1; }
   .row:before, .row:after {
     content: " ";

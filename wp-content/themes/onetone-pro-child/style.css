@@ -29,11 +29,180 @@ p, blockquote {
    Header
    ========================================================================== */
 .home-header {
-  background-color: #e8e5dc;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  margin: 0 auto !important; }
+  padding-bottom: 0px;
+  transition: all 0.3s; }
 
+.fxd {
+  background-color: rgba(0, 0, 0, 0.7) !important; }
+
+.home-logo {
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 70px;
+  margin-left: 0; }
+
+.home-logo--logotype {
+  margin-top: 0px;
+  margin-left: 10px; }
+
+/*  ========
+    Nav
+    ====== */
+.home-navbar {
+  margin-top: 45px; }
+
+.home-navigation {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  float: right;
+  width: calc(100% - 200px); }
+
+.home-navigation ul {
+  float: right;
+  width: auto;
+  height: 10px;
+  display: table;
+  margin-left: 0;
+  margin-top: 15px; }
+
+.home-navigation li {
+  width: auto;
+  display: inline-block;
+  margin-top: 0px; }
+
+.home-navigation li a {
+  text-align: right;
+  padding-left: 10px; }
+
+.home-navigation > ul > li > a > span {
+  font-size: 12px !important;
+  border-radius: 0px; }
+
+/*  ========
+    Cover
+    ====== */
+.cover {
+  max-height: 500px; }
+
+.cover h1 {
+  margin-bottom: 0;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1.5em;
+  border-top: 0px solid #fff;
+  border-bottom: 0px solid #fff;
+  text-transform: none;
+  color: #ffffff;
+  text-shadow: 0px 0px 20px black; }
+
+@media screen and (min-width: 48em) {
+  /*  ========
+    Header
+    ====== */
+  .home-header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .home-logo--logotype {
+    margin-left: 0px; }
+
+  /*  ========
+    Nav
+    ====== */
+  .home-navigation {
+    margin-right: 0px;
+    margin-top: 1em; }
+
+  .home-navigation > ul > li > a > span {
+    font-size: 16px !important; }
+
+  .banner-box {
+    margin-top: 0%; }
+
+  /*  ========
+    Cover
+    ====== */
+  .cover {
+    max-height: 450px; }
+
+  .cover h1 {
+    padding-bottom: 0.5em;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 200;
+    text-shadow: 0px 0px 10px black; } }
+@media screen and (min-width: 56em) {
+  .home-header {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-bottom: 1px solid #93897d;
+    padding-bottom: 20px;
+    background-color: rgba(41, 37, 32, 0.2); }
+
+  .fxd {
+    background-color: rgba(41, 37, 32, 0.9) !important;
+    border-bottom: 0px solid #93897d;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 15px black; }
+
+  .home-logo {
+    padding-top: 0px;
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 120px;
+    height: 120px; }
+
+  .home-navigation {
+    margin-top: 2em;
+    width: 75%;
+    margin-right: 3%; }
+
+  .home-navigation li a {
+    padding: 0 5px; }
+
+  .home-header {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%; }
+
+  .home-logo {
+    margin-left: 3%; }
+
+  .cover {
+    height: 800px;
+    max-height: 721px; }
+
+  .cover h1 {
+    font-size: 4em; }
+
+  .banner-box {
+    margin-top: 12%; } }
+@media screen and (min-width: 75em) {
+  .home-navigation li a {
+    padding: 0 10px; }
+
+  .home-logo {
+    margin-left: 10%; }
+
+  .home-navigation {
+    width: 60%;
+    margin-right: 10%; }
+
+  .cover h1 {
+    font-size: 5em; }
+
+  .banner-box {
+    margin-top: 10%; } }
 .history > .container > h1 > .section-title {
   text-align: left; }
 
@@ -46,6 +215,9 @@ p, blockquote {
   > .onetone-shortcode h3 {
     color: #bf674c;
     font-size: 2rem; }
+
+.re-sellers {
+  padding-top: 0px; }
 
 .re-sellers > .container {
   max-width: 68.5em; }
@@ -71,12 +243,6 @@ p, blockquote {
 .port-img-re-sellers:hover {
   border: 10px solid #93897d; }
 
-.port-img-confectionery {
-  width: 100%;
-  height: auto;
-  border: 1px solid #93897d;
-  transition: all 0.3s; }
-
 .confectionery
 > .container
 > .onetone-shortcode h3 {
@@ -84,11 +250,41 @@ p, blockquote {
   padding-top: 1rem;
   font-family: "Lora", serif;
   font-size: 1.5rem;
-  color: red; }
+  color: #bf674c; }
 
-.cake {
-  color: salmon !important; }
+.port-img-confectionery {
+  width: 100%;
+  height: auto;
+  border: 1px solid #93897d;
+  transition: all 0.3s; }
 
+#back-to-top {
+  padding: 10px;
+  right: 10px;
+  bottom: 7%;
+  border: 0px solid #963 !important;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.button_bestall {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 1em;
+  font-weight: 600; }
+
+.button_vidare {
+  background-color: #bf674c;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 2em; }
+
+@media screen and (min-width: 48em) {
+  #back-to-top {
+    font-size: 0.9em;
+    padding: 1rem;
+    right: 20px; } }
 /* Grid HTML Classes */
 .row {
   width: 100%;
@@ -96,7 +292,7 @@ p, blockquote {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 100%;
+  max-width: 62.5em;
   *zoom: 1; }
 
 .row:before, .row:after {

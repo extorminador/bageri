@@ -29,13 +29,13 @@
         <div class="site-description "><?php bloginfo('description'); ?></div>
         <?php }?>
         </div>
-        
+
         <a class="home-navbar navbar" href="javascript:;"></a>
         <nav class="home-navigation top-nav">
-        
+
 <?php wp_nav_menu( array('theme_location'=>'onepage', 'depth'=>0, 'fallback_cb' =>false, 'container'=>'', 'container_class'=>'main-menu','menu_id'=>'menu-main', 'menu_class'=>'main-nav onepage-nav', 'link_before' => '<span>', 'link_after' => '</span>') );
 ?>
         </nav>
 		<div class="clear"></div>
-	</header>    
+	</header>
 	<!--header-->
